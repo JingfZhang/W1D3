@@ -4,10 +4,10 @@ function charPosition(sentence) {
 
 
   for(var position in sentenceLower) {
-    if (charCount[position] === undefined) {
-      charCount[position] = [];
+    if (charPos[sentenceLower[position]] === undefined) {
+      charPos[sentenceLower[position]] = [];
     }
-    charCount[position].push(position);
+    charPos[sentenceLower[position]].push(position);
   }
 
   return charPos;
